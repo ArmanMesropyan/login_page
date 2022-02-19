@@ -1,0 +1,129 @@
+.loginParent{
+    .form__login{
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+       
+        width: 400px;
+        background-color: rgba(255,255,255,0.13);
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+        border: 2px solid rgba(255,255,255,0.1);
+        box-shadow: 0 0 40px rgba(8,7,16,0.6);
+        padding: 50px 35px;
+        justify-content: center;
+        align-items: center;
+        h5{
+            color: rgba(0, 0, 0, 0.514);
+            font-size: 20px;
+            font-weight: 700;
+            padding-left: 10px;
+            margin: 30px 5px ;
+        }
+        label{
+            margin: 15px;
+            color: white;
+            font-weight: bold;
+        }
+        input{
+            margin: 15px;
+            width: 300px;
+            height: 35px;
+            background-color: transparent;
+            outline: none;
+            border: none;
+            border-bottom: 1.5px solid rgb(235, 235, 235);
+            font-weight: bold;
+            padding-left: 20px;
+           
+            &::placeholder{
+                padding-left: 20px;
+                color: rgba(255, 255, 255, 0.507);
+            }
+           
+            
+        }
+        button{
+             margin: 15px;
+             padding: 10px;   
+             border: 1px solid rgba(0, 0, 0, 0.458);
+             border-radius: 7px;
+             cursor: pointer;
+             background-color: white;
+             font-weight: bold;
+             &:hover{
+                 color: white;
+                 background-color: #1D777D;
+                 transition: 0.5s;
+                 border: solid 1px white;
+             }
+             &:disabled{
+                border: 1px solid #999999;
+                background-color: #cccccc;
+                color: #666666;
+                cursor: not-allowed;
+             }
+        }
+    }
+}
+
+@media screen and (max-width:710px){
+    .loginParent{
+        .form__login{
+      
+        
+        }}
+}
+@media screen and (max-width:460px){
+    .loginParent{
+       
+        .form__login{
+            width: 350px;
+           
+        
+        }}
+}
+@media screen and (max-width:373px){
+    .loginParent{
+        .form__login{
+            width: 320px;
+            height: 500px;
+
+            input{
+                width: 250px;
+            }
+        }}
+}
+@media screen and (max-width:343px){
+    .loginParent{
+        .form__login{
+            width: 280px;
+            height: 500px;
+
+            input{
+                width: 200px;
+            }
+        }}
+}   
+@media screen and (max-width:298px){
+    .loginParent{
+        .form__login{
+            width: 260px;
+            height: 500px;
+
+            input{
+                width: 170px;
+            }
+        }}
+}   
+@media screen and (max-width:268px){
+    .loginParent{
+        .form__login{
+            width: 250px;
+            height: 500px;
+
+            input{
+                width: 160px;
+            }
+        }}
+}   

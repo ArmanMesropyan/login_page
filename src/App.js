@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import './scss/App.scss'
+import background from './img/background.png'
+import LoginPage from './components/loginPage.js';
+
 
 function App() {
+  const [state , setState] = useState(false)
+  const loginPage = () =>{
+    setState(!state)
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <div className='wrapper'>
+            <img className='wrapper__img' src={background}/>
+            <h4 className='title'>Welcome To Login Page</h4>
+            <div className='login__btn'>
+              <button onClick={loginPage}>Login</button>
+            </div>
+            {!state ? null : <div className='login__page'>
+              <LoginPage/>
+            </div>}
+          
+        
+        </div>
+
     </div>
   );
 }
