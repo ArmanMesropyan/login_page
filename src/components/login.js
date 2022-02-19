@@ -23,7 +23,7 @@ const  Login = ({usernameHandler ,username , blurHandler ,usernameError ,usernam
         <label>Username</label>
         <input className='loginText' onChange={usernameHandler} value={username} 
         onBlur={e => blurHandler(e)}  name='username' type={'text'} placeholder='Your Login'/>
-        {(usernameDirty && usernameError) && <div style={{color:'red' , margin:'5px'}}>{usernameError}</div>}
+        {(usernameDirty && usernameError) && <div style={{color:'red', margin:'5px' , backgroundColor:'rgba(235,76,66,0.5)' , padding:'5px'}}>{usernameError}</div>}
         </div>   
         
         <div className='filed'>
@@ -31,7 +31,7 @@ const  Login = ({usernameHandler ,username , blurHandler ,usernameError ,usernam
         <label>Password</label>
         <input className='loginPass' onChange={passwordHandler} value={password} 
         onBlur={e => blurHandler(e)} name='password'  type={'password'} placeholder='Your Password'/>
-        {(passwordDirty && passwordError) && <div style={{color:'red', margin:'5px'}}>{passwordError}</div>}
+        {(passwordDirty && passwordError) && <div style={{color:'red', margin:'5px' , backgroundColor:'rgba(235,76,66,0.5)' , padding:'5px'}}>{passwordError}</div>}
         </div>     
        
      

@@ -20,19 +20,19 @@ const  SingUp = ({usernameHandler ,username , blurHandler ,usernameError ,userna
                <label>Email</label>
                <input className='singUpEmail' onChange={emailHandler } value={email} 
                onBlur={e => blurHandler(e)}  name='email' type={'email'} placeholder='Your Email'/>
-               {(emailDirty && emailError) && <div style={{color:'red' , margin:'5px'}}>{emailError}</div>}
+               {(emailDirty && emailError) && <div style={{color:'red', margin:'5px' , backgroundColor:'rgba(235,76,66,0.5)' , padding:'5px'}}>{emailError}</div>}
             </div>  
             <div className='filed'>
                <label>Username</label>
                <input className='singUpLogin' onChange={usernameHandler} value={username}
                 onBlur={e => blurHandler(e)}  name='username' type={'text'} placeholder='Your Login'/>
-               {(usernameDirty && usernameError) && <div style={{color:'red' , margin:'5px'}}>{usernameError}</div>}
+               {(usernameDirty && usernameError) && <div style={{color:'red', margin:'5px' , backgroundColor:'rgba(235,76,66,0.5)' , padding:'5px'}}>{usernameError}</div>}
             </div>  
             <div className='filed'>
                <label>Password</label>
                <input className='singUpPass'  onChange={passwordHandler} value={password} 
                onBlur={e => blurHandler(e)} name='password' type={'password'} placeholder='Your Password'/>
-               {(passwordDirty && passwordError) && <div style={{color:'red', margin:'5px'}}>{passwordError}</div>}
+               {(passwordDirty && passwordError) && <div style={{color:'red', margin:'5px' , backgroundColor:'rgba(235,76,66,0.5)' , padding:'5px'}}>{passwordError}</div>}
             </div>  
          
             <button disabled={!formValide} type='submit' className='singUpBtn'>SingUp</button>
